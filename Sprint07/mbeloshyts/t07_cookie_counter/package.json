@@ -1,0 +1,15 @@
+{
+    "name": "t07_cookie_counter",
+    "version": "1.0.0",
+    "description": "Web page that shows the count of page loads for the last minute using cookies",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "author": "Maksym Beloshytskyi",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  

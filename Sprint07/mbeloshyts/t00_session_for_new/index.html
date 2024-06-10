@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .form-container, .display-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .form-container input[type="file"] {
+            width: auto;
+            margin: 10px 0;
+        }
+        .form-container .powers, .form-container .publicity {
+            margin-bottom: 10px;
+            margin: 10px 0;
+        }
+        .form-container .powers label, .form-container .publicity label {
+            display: inline-block;
+            margin-right: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="display-container" class="display-container">
+            <h2>Session for new</h2>
+            <div id="display-content">
+                <!-- Display content will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+        <div id="form-container" class="form-container">
+            <h2>Hero Information</h2>
+            <div id="form-content">
+                <!-- Form will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

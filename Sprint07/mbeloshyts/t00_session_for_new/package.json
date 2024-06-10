@@ -1,0 +1,12 @@
+{
+    "name": "hero-information",
+    "version": "1.0.0",
+    "description": "A web page to submit and display hero information with session storage.",
+    "main": "index.js",
+    "scripts": {
+      "start": "live-server"
+    },
+    "author": "Maksym Beloshytskyi",
+    "license": "ISC"
+  }
+  

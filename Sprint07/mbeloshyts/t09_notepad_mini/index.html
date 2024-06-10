@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NotePad Mini</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form textarea,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .note-list {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .note-item {
+            margin-bottom: 10px;
+        }
+
+        .note-item strong {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .note-item a {
+            margin-left: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .note-item a:hover {
+            text-decoration: underline;
+        }
+
+        .note-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .note-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .note-info p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NotePad Mini</h1>
+        <form id="noteForm">
+            <label for="name">Note Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="importance">Importance:</label>
+            <select id="importance" name="importance">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <label for="content">Note Content:</label>
+            <textarea id="content" name="content"></textarea>
+            <button type="button" onclick="addNote()">Add Note</button>
+        </form>
+        <h2>Notes List</h2>
+        <div class="note-list" id="noteList"></div>
+        <h2>Note Information</h2>
+        <div class="note-info" id="noteInfo"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Saver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-weight: bold;
+            margin-bottom: 15px;
+            margin: 10px;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+        input[type="password"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .status {
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .hash {
+            display: block;
+            word-wrap: break-word;
+            width: 100%;
+            white-space: normal;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Password</h1>
+        <div id="message" class="message"></div>
+        <div id="status" class="status">Password not saved at session.</div>
+        <div id="save-form">
+            <label>Password for saving to session <input type="password" id="password"></label>
+            <label>Salt for saving to session <input type="text" id="salt"></label>
+            <div class="button-container">
+                <button id="save-btn">Save</button>
+            </div>
+        </div>
+        <div id="check-form" style="display: none;">
+            <div>Hash is <span id="hash" class="hash"></span>.</div>
+            <label>Try to guess: <input type="password" id="guess-password"></label>
+            <div class="button-container">
+                <button id="check-btn">Check password</button>
+                <button id="clear-btn">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

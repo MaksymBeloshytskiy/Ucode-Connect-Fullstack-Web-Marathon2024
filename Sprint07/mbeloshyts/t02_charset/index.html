@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charset Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        input, select, button, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        textarea {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Charset</h1>
+        <label for="inputString">Change charset:</label>
+        <input type="text" id="inputString" placeholder="Input string">
+
+        <label for="charsets">Select charset or several charsets:</label>
+        <select id="charsets" multiple>
+            <option value="UTF-8">UTF-8</option>
+            <option value="ISO-8859-1">ISO-8859-1</option>
+            <option value="Windows-1252">Windows-1252</option>
+        </select>
+
+        <button id="changeCharset">Change charset</button>
+        <button id="clear">Clear</button>
+
+        <h3>Input string:</h3>
+        <textarea id="originalString" readonly></textarea>
+
+        <h3>UTF-8</h3>
+        <textarea id="utf8Output" readonly></textarea>
+
+        <h3>ISO-8859-1</h3>
+        <textarea id="isoOutput" readonly></textarea>
+
+        <h3>Windows-1252</h3>
+        <textarea id="windowsOutput" readonly></textarea>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

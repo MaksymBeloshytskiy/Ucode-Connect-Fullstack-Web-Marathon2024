@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Reader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        form input[type="file"] {
+            margin-right: 10px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        #filters {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        #filters label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        #filters select {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        #filters button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #filters button:hover {
+            background-color: #0069D9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parsing CSV data</h1>
+    <form id="upload-form">
+        <label for="file-upload">Upload file:</label>
+        <input type="file" id="file-upload" accept=".csv">
+        <button type="submit">Upload</button>
+    </form>
+    <div id="filters">
+        <!-- Filter dropdowns will be inserted here -->
+    </div>
+    <table id="csv-table">
+        <thead id="csv-header">
+            <!-- CSV headers will be inserted here -->
+        </thead>
+        <tbody id="csv-body">
+            <!-- CSV data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>

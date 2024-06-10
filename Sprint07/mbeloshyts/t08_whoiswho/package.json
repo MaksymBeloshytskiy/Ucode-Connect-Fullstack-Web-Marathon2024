@@ -1,0 +1,17 @@
+{
+    "name": "csv-reader",
+    "version": "1.0.0",
+    "description": "A simple CSV reader using Express",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "csv-parser": "^3.0.0",
+        "express": "^4.19.2",
+        "multer": "^1.4.4"
+    },
+    "keywords": [],
+    "author": "Maksym Beloshytskyi",
+    "license": "ISC"
+}
