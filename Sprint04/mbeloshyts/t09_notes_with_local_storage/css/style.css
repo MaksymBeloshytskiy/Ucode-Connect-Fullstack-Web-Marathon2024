@@ -1,0 +1,73 @@
+.all {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin: -40px;
+}
+
+.buttons {
+    margin: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons > input {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+}
+
+.add {
+    background-color: lightseagreen;
+    font-size: 20px;
+    color: ghostwhite;
+}
+
+.textarea {
+    margin: 40px 50px 50px 50px;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.clear {
+    font-size: 20px;
+}
+
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    resize: vertical;
+    margin: 10px 0 30px 30px;
+    width: calc(100% - 70px);
+    border: 2px solid aqua;
+    border-radius: 5px;
+}
+
+.text-input {
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.notes-text {
+    font-size: 20px;
+}
+
+.notes-archives {
+    background-color: lightgray;
+    padding: 30px;
+    margin: 0 50px 50px 50px;
+    border-radius: 10px;
+}
+
+.output-field {
+    font-family: 'Courier New', Courier, monospace;
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
