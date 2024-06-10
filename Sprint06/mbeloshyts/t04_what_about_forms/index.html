@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Quiz</title>
+    <style>
+        /* CSS styles for the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .quiz-container {
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            width: 400px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .radio-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        label {
+            margin-left: 10px;
+        }
+        button {
+            align-self: center;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Avengers Quiz</h1>
+        <form id="quiz-form">
+            <!-- Question -->
+            <p>Who is the strongest Avenger?</p>
+            <!-- Radio buttons for options -->
+            <div class="radio-container">
+                <input type="radio" id="thor" name="avenger" value="Thor">
+                <label for="thor">Thor</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="hulk" name="avenger" value="Hulk">
+                <label for="hulk">Hulk</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="ironman" name="avenger" value="Iron Man">
+                <label for="ironman">Iron Man</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="captain" name="avenger" value="Captain America">
+                <label for="captain">Captain America</label>
+            </div>
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Placeholder for displaying the result -->
+        <p id="result"></p>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="/script.js"></script>
+</body>
+</html>

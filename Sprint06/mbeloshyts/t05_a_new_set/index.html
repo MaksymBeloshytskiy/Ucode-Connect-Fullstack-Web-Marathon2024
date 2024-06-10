@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Recruitment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <!-- Form title -->
+        <h1>Avengers Recruitment Form</h1>
+        <form id="recruitment-form" action="/submit" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <!-- Name input field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <!-- Email input field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <!-- Age input field -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" required>
+            </div>
+            <div class="form-group">
+                <!-- About Me textarea -->
+                <label for="description">About Me:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <!-- Photo upload input field -->
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <div id="photo-preview"></div>
+            </div>
+            <div class="form-group">
+                <!-- Submit and remove photo buttons -->
+                <button type="submit">Apply</button>
+                <button type="button" id="remove-photo">Remove Photo</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="client.js"></script>
+</body>
+</html>
