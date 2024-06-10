@@ -1,0 +1,29 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: left;
+}
+
+/* Form styles */
+form {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+
+/* Input styles */
+input {
+    height: 2em;
+    color: green;
+    padding-left: 10px;
+}
+
+input:hover {
+    color: red;
+}
+
+#search_bar {
+    width: 100%;
+}

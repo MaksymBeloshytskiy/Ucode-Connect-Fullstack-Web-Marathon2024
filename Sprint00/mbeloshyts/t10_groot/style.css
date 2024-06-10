@@ -1,0 +1,41 @@
+/* Styles for h1 element */
+h1 {
+    margin-left: 30px; /* Adds left margin of 30 pixels */
+    padding-bottom: 40px; /* Adds bottom padding of 40 pixels */
+}
+
+/* Styles for .box class */
+.box {
+    position: relative; /* Sets the position to relative */
+    margin: auto; /* Centers the element horizontally */
+    width: calc(100vw - 200px); /* Sets the width to 100% of the viewport width minus 200 pixels */
+    padding: 25px 25px; /* Adds padding of 25 pixels on top and bottom, and 25 pixels on left and right */
+    font-size: 1.2em; /* Sets the font size to 1.2em */
+    background: lightgray; /* Sets the background color to light gray */
+}
+
+/* Styles for ::before pseudo-element of .box class */
+.box::before {
+    position: absolute; /* Sets the position to absolute */
+    content: ""; /* Adds empty content */
+    top: -1px; /* Positions the element 1 pixel above the top edge of its containing element */
+    left: -40px; /* Positions the element 40 pixels to the left of its containing element */
+    right: 40px; /* Positions the element 40 pixels to the right of its containing element */
+    border-top: 1px solid black; /* Adds a 1 pixel solid black border on the top */
+    border-bottom: 1px solid black; /* Adds a 1 pixel solid black border on the bottom */
+    width: calc(100% + 80px); /* Sets the width to 100% of the containing element's width plus 80 pixels */
+    height: 100%; /* Sets the height to 100% of the containing element's height */
+}
+
+/* Styles for ::after pseudo-element of .box class */
+.box::after {
+    position: absolute; /* Sets the position to absolute */
+    content: ""; /* Adds empty content */
+    top: -40px; /* Positions the element 40 pixels above the top edge of its containing element */
+    right: -1px; /* Positions the element 1 pixel to the right of its containing element */
+    bottom: 40px; /* Positions the element 40 pixels below the bottom edge of its containing element */
+    border-right: 1px solid black; /* Adds a 1 pixel solid black border on the right */
+    border-left: 1px solid black; /* Adds a 1 pixel solid black border on the left */
+    width: 100%; /* Sets the width to 100% of the containing element's width */
+    height: calc(100% + 80px); /* Sets the height to 100% of the containing element's height plus 80 pixels */
+}

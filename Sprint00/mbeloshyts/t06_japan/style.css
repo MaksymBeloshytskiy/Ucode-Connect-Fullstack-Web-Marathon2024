@@ -1,0 +1,19 @@
+.japan {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    border: 1px solid black;
+}
+
+.japan::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: rgb(193, 18, 18);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

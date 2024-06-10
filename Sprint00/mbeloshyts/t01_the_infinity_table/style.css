@@ -1,0 +1,64 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Center the table and collapse the borders of the table cells */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* Add padding and a border around each cell */
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Align only the "Powers and capabilities" column text to the left */
+td:nth-child(3) {
+    text-align: justify;
+}
+
+/* Image styles */
+img {
+    border-radius: 20px;
+    display: block; /* Center the image horizontally */
+    margin: 0 auto;
+}
+
+/* Header styles */
+#Header {
+    background-color: black;
+    color: white;
+}
+
+/* Footer styles */
+#Footer {
+    background-color: lightgrey;
+}
+
+/* Specific styles for each stone */
+#Soul {
+    background-color: #f5a645;
+}
+
+#Time {
+    background-color: #53a136;
+}
+
+#Space {
+    background-color: #0371ba;
+}
+
+#Mind {
+    background-color: #ffff24;
+}
+
+#Reality {
+    background-color: #ce0007;
+}
+
+#Power {
+    background-color: #7c6cc1;
+}

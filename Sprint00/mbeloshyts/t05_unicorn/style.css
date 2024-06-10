@@ -1,0 +1,15 @@
+/* Styling for the rainbow block */
+#rainbow-block {
+    height: 100px;
+    width: available; /* Use the available width of the container */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* Styling for the horn block */
+#horn-block {
+    border-right: 60px solid transparent;
+    border-bottom: 120px solid gray;
+    border-left: 60px solid transparent;
+    margin: -40px 0 0 100px; /* Adjust the positioning of the block */
+    width: 0; /* Set the width to 0 to create a triangle shape */
+}
