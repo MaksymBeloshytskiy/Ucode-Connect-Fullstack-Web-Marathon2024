@@ -1,0 +1,16 @@
+/* style.css */
+
+/* Add styles for the image */
+.image {
+    position: fixed; /* Position the image relative to the viewport */
+    top: 50%; /* Move the top of the image to the middle of the viewport */
+    left: 50%; /* Move the left of the image to the middle of the viewport */
+    transform: translate(-50%, -50%); /* Center the image precisely */
+    transition: transform 0.3s; /* Add smooth transition effect */
+  }
+  
+  /* Add hover effect to rotate the image */
+  .image:hover {
+    transform: translate(-50%, -50%) rotate(-30deg); /* Rotate the image while keeping it centered */
+  }
+  

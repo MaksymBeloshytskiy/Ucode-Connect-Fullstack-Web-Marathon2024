@@ -1,0 +1,117 @@
+/* Header */
+.menu-header {
+    width: 100%;
+    background: red;
+    line-height: 2em;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+  }
+  
+  /* Reset styles */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  /* Top menu container */
+  .top-menu {
+    margin: auto; /* Center horizontally */
+    text-align: center; /* Center-align the inline-blocks */
+  }
+  
+  /* First-level form */
+  .first-form {
+    left: -25px;
+    display: inline-block;
+    position: relative;
+    width: 10em;
+    height: fit-content;
+    background: rgb(188, 184, 184);
+    margin: 20px 5px; /* Center horizontally */
+    padding: 20px 50px;
+    text-align: center;
+  }
+  
+  /* Submenu container */
+  .submenu-down {
+    top: 59px;
+    left: -40px;
+    visibility: hidden;
+    position: absolute;
+    text-align: center; /* Center-align the submenus */
+    opacity: 0;
+  }
+  
+  /* Submenu items */
+  .submenu-down > li {
+    justify-content: center;
+    position: center;
+    width: 10em;
+    height: fit-content;
+    margin: 0px auto; /* Center horizontally */
+    padding: 17px 50px;
+    background: rgb(188, 184, 184);
+    text-align: left;
+  }
+  
+  /* Sub-submenu items */
+  .submenu-down > li > ul > li {
+    width: 10em;
+    margin: 0; /* Adjust margin */
+    background: rgb(188, 184, 184);
+  }
+  
+  /* Hover effect on first-level form */
+  .first-form:hover {
+    background: red;
+  }
+  
+  /* Show submenu on hover */
+  .first-form:hover > .submenu-down {
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+  }
+  
+  /* Hide submenu ul */
+  .first-form:hover > .submenu-down ul {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .submenu-brotherhood {
+    width: 10em;
+    height: fit-content;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  /* Style for BrotherHood submenu item */
+  .submenu-down > .brotherhood:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  /* Show BrotherHood submenu on hover */
+  .submenu-down > .brotherhood:hover > .submenu-brotherhood {
+    color: black;
+    left: 260px;
+    width: 10em;
+    margin: -23px 0px;
+    padding: 10px -50px;
+    height: fit-content;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Show FrontEnd submenu on hover */
+  .submenu-down > .frontend:hover > .submenu-frontend {
+    visibility: visible;
+    opacity: 1;
+  }
+  

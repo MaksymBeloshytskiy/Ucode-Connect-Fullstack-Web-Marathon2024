@@ -1,0 +1,258 @@
+/* for General */
+
+* {
+    font-family: Acunima, sans-serif;
+    user-select: none;
+}
+
+#header {
+    color: #404750;
+    text-align: center;
+}
+
+#background {
+    background: #404750;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+    border-collapse: collapse;
+    border-radius: 20px; /* Added border radius */
+}
+
+#centerBlock {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6em;
+    border: 1px solid #6c6f73;
+    background: #4a525d;
+    padding: 3em 3em 6em 3em;
+    margin: 30px 0 30px 0;
+}
+
+#centerBlock > div > p {
+    color: #c7c8c9;
+    font-size: 1em;
+}
+
+/* for Typeface */
+
+#typeface {
+    background: #333a41;
+    color: #cbcbcc;
+    border: 1px solid #767a80;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #363d48;
+    font-size: 1em;
+    padding-left: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.selectTypeface > label {
+    border-right: 2px solid #c1c1c2;
+    border-bottom: 2px solid #c1c1c2;
+    transform: translate(-2em, 0.5em) rotate(45deg);
+    position: absolute;
+    width: 12px;
+    height: 12px;
+}
+
+/* for Dark UI */
+
+#darkUI {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.selectDarkUI {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+}
+
+#darkUI + label {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background: #333a41;
+    position: relative;
+    border-radius: 20px; /* Added border radius */
+}
+
+#darkUI + label::after {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #75b7a6;
+    content: "";
+    position: absolute;
+    margin: 4px;
+    transition: 0.5s;
+}
+
+#darkUI:checked + label {
+    background: #5a93e5;
+}
+
+#darkUI:checked + label::after {
+    margin: 4px 4px 4px 44px;
+    transition: 0.5s;
+}
+
+/* for Font Weight */
+
+.selectWeight > form > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.selectWeight > form > input + label {
+    margin-left: 1.5em;
+    color: #cbcbcc;
+    position: relative;
+}
+
+.selectWeight > form > label::before {
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    background: #333a41;
+    border: 1px solid #a6a7a9;
+    content: "";
+    margin-left: -1.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectWeight > form > input:checked + label::before {
+    content: "✓";
+    color: #75b7a6;
+    text-align: center;
+}
+
+/* for Color */
+
+.selectColor > div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.selectColor > div > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.selectColor > div > input + label {
+    width: 25px;
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.selectColor > div > input:checked + label::after {
+    content: "✓";
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    left: 6px;
+    top: 2px;
+}
+
+.selectColor > div #blue + label {
+    background: #5274b4;
+}
+
+.selectColor > div #green + label {
+    background: #75b7a6;
+}
+
+.selectColor > div #pink + label {
+    background: #c168c5;
+}
+
+.selectColor > div #yellow + label {
+    background: #dbd878;
+}
+
+.selectColor > div #orange + label {
+    background: #c78565;
+}
+
+/* for Size */
+.selectSize > input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    position: relative;
+    background: transparent;
+    outline: none;
+}
+
+.selectSize > input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #75b7a6;
+    position: relative;
+    bottom: 8px;
+    border-radius: 50%;
+}
+
+.selectSize > input[type="range"]::-webkit-slider-runnable-track {
+    background: #3b424b;
+    height: 2px;
+}
+
+.selectSize > input::after,
+.selectSize > input::before {
+    content: "A";
+    position: relative;
+    color: white;
+    top: 100%;
+}
+
+.selectSize > input::after {
+    font-size: 30px;
+    right: 100%;
+}
+
+.selectSize > input::before {
+    font-size: 18px;
+    left: 100%;
+}
+
+/* Buttons block */
+
+#buttonsBlock {
+    background: #333a41;
+    border-radius: 0 20px 20px 0;
+}
+
+#buttonsBlock > label > img {
+    margin: 1em;
+    height: 2em;
+}
+
+#buttonsBlock > label > input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 660px) {
+    #centerBlock {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,210 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Added padding */
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navigation-between {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navigation-left a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333745;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 20px; /* Adjust spacing between elements */
+    flex: 0 0 auto; /* Set flex properties */
+}
+
+.navigation-right a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333745;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navigation-center img {
+    width: auto;
+    height: 58px;
+}
+
+#wrap {
+    position: relative;
+    margin-right: 20px;
+}
+
+input[type="text"] {
+    height: 40px;
+    width: 200px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Make search bar round */
+    transition: width 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    width: 300px;
+}
+
+/* Content Section */
+#search_submit {
+    text-align: center;
+    height: 40px;
+    width: 55px;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Make search button round */
+    transition: width 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px; /* Added padding */
+    
+}
+
+/* Filter Section */
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px; /* Adjust width as needed */
+    margin-right: 20px; /* Added margin to create space */
+    margin-top: 18px;
+}
+
+.filter-left {
+    margin-right: 20px;
+}
+
+.checkbox-info {
+    margin-bottom: 15px; /* Added margin-bottom */
+}
+
+.checkbox-info label {
+    margin-left: 10px; /* Adjust spacing between elements */
+}
+
+.lethal-effects {
+    margin-bottom: 15px; /* Added margin-bottom */
+}
+
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Increased gap between grid items */
+    margin-top: 20px; /* Added margin to create space */
+}
+
+.product {
+    background-color: #747f83;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.info {
+    margin-bottom: 10px;
+    padding: 15px; /* Added padding */
+}
+
+.product-info {
+    padding-left: 20px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.product-info p {
+    margin-bottom: 10px;
+}
+
+.product-info h4 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.buy {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Make button round */
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buy:hover {
+    background-color: #555;
+}
+
+/* Footer Section */
+.footer-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Additional Styles */
+.navigation-right {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-left-footer a {
+    text-decoration: none;
+    color: #333745;
+    font-size: 12px;
+}
+
+.filter_title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

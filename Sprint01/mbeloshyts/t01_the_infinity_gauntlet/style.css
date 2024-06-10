@@ -1,0 +1,25 @@
+.gauntlet {
+    display: block;
+    width: 25%;
+    position: relative;
+}
+
+/* Remove .table class selector */
+/* This selector is not needed anymore */
+.table {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.man {
+    width: 100%;
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Adjust the CSS selector to target specific table cells */
+/* Hide odd numbered cells in odd numbered rows and even numbered cells in even numbered rows when hovering over .gauntlet */
+.gauntlet:hover ~ .table tbody tr:nth-child(odd) td:nth-child(odd),
+.gauntlet:hover ~ .table tbody tr:nth-child(even) td:nth-child(even) {
+    opacity: 0;
+}

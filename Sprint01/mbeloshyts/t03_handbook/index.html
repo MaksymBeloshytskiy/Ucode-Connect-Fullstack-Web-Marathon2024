@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Handbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Contents Section -->
+        <section class="contents">
+            <h1>Web Development Handbook</h1>
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#protocols">Protocols</a></li>
+            </ul>
+        </section>
+
+        <!-- HTML Section -->
+        <section id="html" class="topic">
+            <h2>HTML</h2>
+            <!-- Subtopics -->
+            <div class="subtopic">
+                <h3>Introduction to HTML</h3>
+                <p>HTML is the standard markup language for creating web pages.</p>
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <p>Example:</p>
+                <pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+            <div class="subtopic">
+                <h3>HTML Elements</h3>
+                <p>HTML documents are composed of HTML elements represented by tags.</p>
+                <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+                <p>Example:</p>
+                <pre><code>&lt;div&gt;
+  &lt;h2&gt;Heading&lt;/h2&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="subtopic">
+                <h3>HTML Attributes</h3>
+                <p>HTML attributes provide additional information about HTML elements.</p>
+                <code>&lt;img src="image.jpg" alt="Image"&gt;</code>
+                <p>Example:</p>
+                <pre><code>&lt;a href="https://www.example.com"&gt;Link&lt;/a&gt;</code></pre>
+            </div>
+            <div class="subtopic">
+                <h3>HTML Forms</h3>
+                <p>HTML forms allow users to input data that can be submitted to a server for processing.</p>
+                <code>&lt;form action="/submit" method="post"&gt;</code>
+                <p>Example:</p>
+                <pre><code>&lt;input type="text" name="username"&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- CSS Section -->
+        <section id="css" class="topic">
+            <h2>CSS</h2>
+            <!-- Subtopics -->
+            <div class="subtopic">
+                <h3>Introduction to CSS</h3>
+                <p>CSS is a style sheet language used for describing the presentation of a document written in HTML.</p>
+                <code>body { background-color: lightblue; }</code>
+                <p>Example:</p>
+                <pre><code>body {
+  font-family: Arial, sans-serif;
+}</code></pre>
+            </div>
+            <div class="subtopic">
+                <h3>CSS Selectors</h3>
+                <p>CSS selectors are patterns used to select and style elements in an HTML document.</p>
+                <code>p { color: blue; }</code>
+                <p>Example:</p>
+                <pre><code>#header {
+  font-size: 24px;
+}</code></pre>
+            </div>
+            <div class="subtopic">
+                <h3>CSS Box Model</h3>
+                <p>The CSS box model describes the space around an element, including padding, borders, and margins.</p>
+                <code>.box { padding: 10px; }</code>
+                <p>Example:</p>
+                <pre><code>.box {
+  border: 1px solid black;
+}</code></pre>
+            </div>
+            <div class="subtopic">
+                <h3>CSS Flexbox</h3>
+                <p>CSS Flexbox is a layout model that allows for more efficient and predictable positioning of elements within a container.</p>
+                <code>.container { display: flex; }</code>
+                <p>Example:</p>
+                <pre><code>.item {
+  flex-grow: 1;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Protocols Section -->
+        <section id="protocols" class="topic">
+            <h2>Protocols</h2>
+            <!-- Subtopics -->
+            <div class="subtopic">
+                <h3>HTTP/HTTPS</h3>
+                <p>HTTP (Hypertext Transfer Protocol) and HTTPS (Hypertext Transfer Protocol Secure) are protocols for transferring data on the web.</p>
+                <p>Describe each method and all classes of response status codes here.</p>
+            </div>
+            <div class="subtopic">
+                <h3>DNS</h3>
+                <p>DNS (Domain Name System) translates domain names to IP addresses.</p>
+                <p>Describe all kinds of DNS records here.</p>
+            </div>
+            <div class="subtopic">
+                <h3>IP</h3>
+                <p>IP (Internet Protocol) is a set of rules for sending and receiving data on the internet.</p>
+                <p>Describe how to determine an IP address here.</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

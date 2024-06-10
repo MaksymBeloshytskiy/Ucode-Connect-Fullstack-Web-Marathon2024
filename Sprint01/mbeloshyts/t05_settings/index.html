@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Settings</title>
+    <meta charset="utf-8">
+    <meta name="description" content="t05. Settings">
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+</head>
+
+<body>
+    <h1 id=header>Settings</h1> <!-- Heading -->
+    <div id="background">
+        <div id="centerBlock">
+            <div class="selectTypeface">
+                <p>Typeface</p> <!-- Label for Typeface selection -->
+                <select name="typeface" id="typeface"> <!-- Dropdown for Typeface selection -->
+                    <option value="acunimPro">Acunim Pro</option>
+                    <option value="comicSans">Comic Sans</option>
+                    <option disabled value="com">Times New Roman</option> <!-- Disabled option -->
+                </select>
+                <label for="typeface"></label> <!-- Empty label for accessibility -->
+            </div>
+            <div class="selectDarkUI">
+                <p>Dark UI</p> <!-- Label for Dark UI checkbox -->
+                <input type="checkbox" name="dakUI" id="darkUI"> <!-- Dark UI checkbox -->
+                <label for="darkUI"></label> <!-- Empty label for accessibility -->
+            </div>
+            <div class="selectWeight">
+                <p>Weight</p> <!-- Label for Weight radio buttons -->
+                <form>
+                    <input type="radio" id="regular" name="weight" value="regular"> <!-- Regular radio button -->
+                    <label for="regular">Regular</label>
+                    <input type="radio" id="bolt" name="weight" value="bolt"> <!-- Bolt radio button -->
+                    <label for="bolt">Bold</label>
+                </form>
+            </div>
+            <div class="selectColor">
+                <p>Color</p> <!-- Label for Color checkboxes -->
+                <div>
+                    <input type="checkbox" name="color" id="blue"> <!-- Blue checkbox -->
+                    <label for="blue"></label> <!-- Empty label for accessibility -->
+                    <input type="checkbox" name="color" id="green"> <!-- Green checkbox -->
+                    <label for="green"></label> <!-- Empty label for accessibility -->
+                    <input type="checkbox" name="color" id="pink"> <!-- Pink checkbox -->
+                    <label for="pink"></label> <!-- Empty label for accessibility -->
+                    <input type="checkbox" name="color" id="yellow"> <!-- Yellow checkbox -->
+                    <label for="yellow"></label> <!-- Empty label for accessibility -->
+                    <input type="checkbox" name="color" id="orange"> <!-- Orange checkbox -->
+                    <label for="orange"></label> <!-- Empty label for accessibility -->
+                </div>
+            </div>
+            <div class="selectSize">
+                <p>Size</p> <!-- Label for Size range input -->
+                <input type="range" id="fontSize" min="12" max="32" step="1" value="0"> <!-- Size range input -->
+                <label for="fontSize"></label> <!-- Empty label for accessibility -->
+            </div>
+        </div>
+        <nav id="buttonsBlock">
+            <label for="settingsButton">
+                <input type="button" name="settings" id="settingsButton" value="settings"> <!-- Settings button -->
+                <img src="./assets/images/artistic-brush.png" alt="brush"> <!-- Brush icon -->
+            </label><br>
+            <label for="userButton">
+                <input type="button" name="user" id="userButton" value="user"> <!-- User button -->
+                <img src="./assets/images/user-icon.png" alt="user"> <!-- User icon -->
+            </label><br>
+            <label for="messegeButton">
+                <input type="button" name="messege" id="messegeButton" value="messege"> <!-- Message button -->
+                <img src="./assets/images/sms-speech-bubble.png" alt="messege"> <!-- Message icon -->
+            </label><br>
+            <label for="screenButton">
+                <input type="button" name="screen" id="screenButton" value="screen"> <!-- Screen button -->
+                <img src="./assets/images/computer-screen.png" alt="screen"> <!-- Screen icon -->
+            </label><br>
+        </nav>
+    </div>
+</body>
+
+</html>

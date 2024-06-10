@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50; /* Green */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: moveCircle 4s linear infinite;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Added shadow */
+    transition: background-color 0.5s; /* Smooth color transition */
+}
+
+.circle:hover {
+    background-color: #FF5733; /* Red */
+}
+
+@keyframes moveCircle {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px);
+    }
+    100% {
+        left: 0;
+    }
+}

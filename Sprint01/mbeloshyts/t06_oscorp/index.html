@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Oscorp</title>
+    <meta name="description" content="t06. Oscorp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <div class="navigation">
+            <div class="navigation-left">
+                <a href="card.html">About</a>
+                <a href="card.html">Home</a>
+                <a href="card.html">Contact</a>
+            </div>
+            <div class="navigation-center">
+                <a href="#"><img src="assets/images/oscorp_logo.jpg" alt="Oscorp"></a>
+            </div>
+            <div class="navigation-right">
+                <div id="wrap">
+                    <form action="" autocomplete="on">
+                        <input id="search" name="search" type="text" placeholder="What`re we looking for?">
+                        <input id="search_submit" value="Search" type="submit">
+                    </form>
+                </div>
+                <a href="#">Phone: +380 96 366 73 20</a>
+            </div>
+        </div>
+        <!-- Navigation Between Pages -->
+        <div class="navigation-between">
+            <h4>HOME / CATALOGUE</h4>
+        </div>
+        <div class="content">
+            <!-- Filter Section -->
+            <div class="filter">
+                <div class="filter-left">
+                    <h4 class="filter_title">Chance of lethal effect</h4>
+                    <div class="checkbox-info">
+                        <input type="checkbox" id="unlikely"><label for="unlikely">Unlikely (0-20%)</label>
+                    </div>
+                    <div class="checkbox-info">
+                        <input type="checkbox" id="mid"><label for="mid">Mid (20-40%)</label>
+                    </div>
+                    <div class="checkbox-info">
+                        <input type="checkbox" id="moderate"><label for="moderate">Moderete (40-60%)</label>
+                    </div>
+                    <div class="checkbox-info">
+                        <input type="checkbox" id="likely"><label for="likely">Likely (60-80%)</label>
+                    </div>
+                    <div class="checkbox-info">
+                        <input type="checkbox" id="certain"><label for="certain">Certain (80-100%)</label>
+                    </div>
+                </div>
+                <div class="filter-right">
+                    <div class="block">
+                        <p style="font-size: 16px; font-weight: bold;">Price</p>
+                        <input class="price" type="range" name="size" min="0" max="20000" step="1" value="0">
+                        <p>$0 - $20000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery Section -->
+            <section class="gallery">
+                <div class="product">
+                    <img src="assets/images/arachnede.jpg" alt="Arachnede">
+                    <div class="info">
+                        <p>Poisonous Spider - Species: Arachnidae</p>
+                        <h4>$49.99</h4>
+                        <p>Availability: In Stock</p>
+                        <a href="card.html"><button class="buy">Buy</button></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/images/loxosceles.jpg" alt="Loxosceles">
+                    <div class="info">
+                        <p>Poisonous Spider - Species: Loxosceles</p>
+                        <h4>$59.99</h4>
+                        <p>Availability: In Stock</p>
+                        <a href="card.html"><button class="buy">Buy</button></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/images/glider.jpg" alt="Goblin's Glider">
+                    <div class="info">
+                        <p>Green Goblin Glider</p>
+                        <h4>$299.99</h4>
+                        <p>Availability: Out of Stock</p>
+                        <a href="card.html"><button class="buy">Buy</button></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/images/granade.jpg" alt="Goblin's Granade">
+                    <div class="info">
+                        <p>Green Goblin Pumpkin Bomb</p>
+                        <h4>$199.99</h4>
+                        <p>Availability: In Stock</p>
+                        <a href="card.html"><button class="buy">Buy</button></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer-nav">
+            <div class="navigation-left-footer">
+                <a href="#">Copytight © 2024 | OSCORP | All Rights Reserved</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

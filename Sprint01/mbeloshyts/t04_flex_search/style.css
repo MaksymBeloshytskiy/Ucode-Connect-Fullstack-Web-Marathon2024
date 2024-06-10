@@ -1,0 +1,31 @@
+.header {
+    text-align: center;
+    padding: 0 10px;
+    margin: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+input:hover{
+    color: red;
+}
+
+.input_phrase {
+    color: #70d33e;
+    flex-grow: 3;
+    border-radius: 3px;
+    border-color: rgba(52, 96, 190);
+}
+
+.input_phrase::placeholder {
+    color: #70d33e;
+};
+
+.find_button {
+    color: #6ae72c;
+}
